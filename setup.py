@@ -1,6 +1,7 @@
 import distutils.cmd
 import os
 import subprocess
+from dunamai import Version
 
 from setuptools import find_packages, setup
 
@@ -35,8 +36,8 @@ with open(
 
 
 setup(
-    name="django-localized-fields",
-    version="6.6",
+    name="vyn-django-localized-fields",
+    version=Version.from_any_vcs().serialize(),
     packages=find_packages(exclude=["tests"]),
     include_package_data=True,
     license="MIT License",
