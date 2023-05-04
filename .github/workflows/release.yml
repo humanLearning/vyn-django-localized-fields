@@ -30,7 +30,7 @@ jobs:
       postgres:
         image: postgres
         env:
-	  POSTGRES_DB: localizedfields
+          POSTGRES_DB: localizedfields
           POSTGRES_USER: localizedfields
           POSTGRES_PASSWORD: localizedfields
         # Set health checks to wait until postgres has started
