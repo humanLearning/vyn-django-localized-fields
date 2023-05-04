@@ -95,7 +95,7 @@ setup(
             "autoflake==1.3",
             "autopep8==1.4.4",
             "isort==4.3.20",
-            "sl-docformatter==1.4",
+            "docformatter==1.6.5",
         ],
     },
     cmdclass={
