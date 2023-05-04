@@ -1,2 +1,9 @@
+[project]
+name="vyn-django-localized-fields"
+dynamic = ["version", "classifiers", "dependencies", "optional-dependencies", "keywords", "authors", "license", "requires-python", "readme", "description"]
+
 [tool.black]
 line-length = 80
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]

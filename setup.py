@@ -1,9 +1,8 @@
 import distutils.cmd
 import os
 import subprocess
-from dunamai import Version
 
-from setuptools import find_packages, setup
+from setuptools import find_namespace_packages, setup
 
 
 class BaseCommand(distutils.cmd.Command):
@@ -37,8 +36,7 @@ with open(
 
 setup(
     name="vyn-django-localized-fields",
-    version=Version.from_any_vcs().serialize(),
-    packages=find_packages(exclude=["tests"]),
+    packages=find_namespace_packages(exclude=["tests"]),
     include_package_data=True,
     license="MIT License",
     description="Implementation of localized model fields using PostgreSQL HStore fields.",
