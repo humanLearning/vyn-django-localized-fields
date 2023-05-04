@@ -45,6 +45,7 @@ jobs:
         env: 
           DATABASE_URL: 'postgres://localizedfields:localizedfields@localhost:5432/localizedfields'
         run: |
+          pip install tox
           tox
 #  release:
 #    runs-on: ubuntu-latest
