@@ -22,7 +22,7 @@ class LocalizedFieldWidget(forms.MultiWidget):
 
         super().__init__(initial_widgets, *args, **kwargs)
 
-        for ((lang_code, lang_name), widget) in zip(
+        for (lang_code, lang_name), widget in zip(
             settings.LANGUAGES, self.widgets
         ):
             widget.attrs["lang"] = lang_code

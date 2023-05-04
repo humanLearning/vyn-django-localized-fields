@@ -95,7 +95,6 @@ class LocalizedFileField(LocalizedField):
     def __init__(
         self, verbose_name=None, name=None, upload_to="", storage=None, **kwargs
     ):
-
         self.storage = storage or default_storage
         self.upload_to = upload_to
 
